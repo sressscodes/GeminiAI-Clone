@@ -25,7 +25,7 @@ const Sidebar = () => {
         {extended
         ?<div className="recent">
             <p className="recent-title">Recent</p>
-            {previousPrompt.map((item,index)=>{
+            {previousPrompt.map((item)=>{
                 return (
                     <div onClick={() => loadPrompt(item)} className="recent-entry">
                 <img src={assets.message_icon} alt="" />
